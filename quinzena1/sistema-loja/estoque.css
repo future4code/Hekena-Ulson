@@ -1,0 +1,42 @@
+th{
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 12px;
+}
+
+h1{
+    font-family: 'Segoe UI', sans-serif;
+    font-style: none;
+    text-align: center;
+    margin-top: 36px;
+    padding-bottom: 60px;
+}
+
+img{
+    width: 30%;
+    border: 4px;
+
+}
+
+.saco{
+    width: 40%;
+    padding: 0px;
+}
+
+td{
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+table{
+    display: absolute;
+    margin-left: 0px;
+    margin-right: 120px;
+}
+
+footer{
+    background-color: purple;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    margin-top: 188px;
+}

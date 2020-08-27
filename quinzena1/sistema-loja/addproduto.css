@@ -1,0 +1,44 @@
+h1{
+    font-family: 'Segoe UI', sans-serif;
+    font-style: none;
+    text-align: center;
+    margin-top: 36px;
+    padding-bottom: 60px;
+}
+
+label{
+    font-family: 'Segoe UI', sans-serif;
+    font-style: none;
+    text-align: center;
+    padding-bottom: 18px;
+  
+}
+
+form {
+    margin-left: 38%;
+}
+
+#preco{
+    margin-left: 61px;
+}
+
+#descricao{
+    margin-left: 6px;
+}
+
+#link-foto{
+    margin-left: 61px;
+}
+
+.form-add{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 266px;
+}
+
+button{
+    background: purple;
+    color: white;
+    padding:4px;
+}

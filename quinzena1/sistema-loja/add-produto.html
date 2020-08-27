@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="addproduto.css">
+    <link rel="stylesheet" href="menu.css">
+    <title>Sacos de Lixo para Todos os Gostos!</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <ul>
+                <li><a class="menustyle" href="index.html">Página Inicial</a></li>
+                <li><a class="menustyle" href="ctrl-estoque.html">Controle de Estoque</a></li>
+                <li><a class="menustyle" href="add-produto.html">Adicionar Produto</a></li>
+                <li><a class="menustyle" href="funcionarios.html">Funcionários</a></li>
+            </ul>
+        </div>    
+    </header>    
+    
+    <h1>Adicionar Produto</h1>
+    <form action="">
+        <div>
+            <label for="link-foto">Link para foto: </label>
+            <input class="inp1" type="url" id="link-foto" name="link-foto">
+        </div>
+        
+        <div>
+            <label for="descricao">Descrição do produto: </label>
+            <!-- Adicione o id apropriado para o input abaixo -->
+            <input type="text" id="descricao" name="descrição">
+        </div>
+        
+        <div>
+            <label for="preco">Preço (em R$): </label>
+            <!-- Adicione o id apropriado e o type para receber números abaixo -->
+            <input type="number" id="preco" name="preço">
+        </div>
+        
+        <div>
+            <!-- Preencha as propriedades necessárias para os elementos abaixo -->
+            <label for="qtd">Quantidade disponível: </label>
+            <input type="number" id="qtd" name="qtd">
+        </div>
+
+        <div class="form-add">
+            <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
+            <button type="text">Adicionar</button>
+        </div>
+
+    </form>
+
+</body>
+</html>

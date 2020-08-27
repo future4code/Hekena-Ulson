@@ -1,0 +1,21 @@
+.funciona{
+    display: block;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 12px;
+}
+
+h1{
+    font-family: 'Segoe UI', sans-serif;
+    font-style: none;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer{
+    background-color: purple;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    margin-top: 188px;
+}
+
