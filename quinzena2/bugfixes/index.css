@@ -83,6 +83,14 @@ div img {
     width: 20px;
 }
 
+.icone:hover{
+    filter: opacity(120%)
+}
+.icone:active{
+    filter: opacity(100%)
+
+}
+
 
 /** 
   *
