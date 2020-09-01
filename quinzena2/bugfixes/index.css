@@ -52,10 +52,18 @@ div img {
     background-color: #c44f00;
 }
 
+.txthome{
+    display: absolute;
+    padding-top: 80px;
+}
+
 .container {
+    display: relative;
     height: 500px;
     text-align: center;
+    margin-top: 0;
 }
+
 
 .icone {
     height: 15px;
@@ -71,6 +79,7 @@ div img {
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
+    display: relative;
 }
 
 #container-de-descricao>ol {
