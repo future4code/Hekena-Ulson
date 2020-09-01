@@ -19,6 +19,10 @@ h2 {
 input {
     height: 20px;
     width: 500px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: black, 3px;
 }
 
 button:active {
