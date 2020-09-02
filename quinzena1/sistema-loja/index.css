@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url("img/sacosdelixo3.jpg");
+    background-size: cover;
+    background-position: top;  
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+h1{
+    font-family: 'Impact', sans-serif;
+    font-style: none;
+    text-align: center;
+    margin-top: 60px;
+    color:white;
+    font-size: 100px;
+}
+
+p{
+    font-family: 'Segoe UI', sans-serif;
+    font-style: none;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+img {
+    display: inline;
+    text-align: center;
+    width: 12%;
+    padding: 12px;
+}
+
+header {
+    background-color: purple;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+li{
+    display: inline;
+    padding: 4px;
+}
+
+.menustyle{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    margin-left: 20px;   
+}
+
+.redessociais{
+    display: block;
+    width: 12%;
+    margin-left: 1116px;
+    margin-top: 0px;
+}
+
+.siganos{
+    display: inline;
+    margin-left: 1108px;
+    font-family: Verdana;
+    font-size: 12px;
+    color: black;
+}
+
+footer{
+    background-color: purple;
+    padding-top: 40px;
+    padding-bottom: 42px;
+    margin-top: 224px;
+}
+

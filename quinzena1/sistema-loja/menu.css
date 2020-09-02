@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    background-color: purple;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+li{
+    display: inline;
+    padding: 4px;
+}
+
+.menustyle{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    margin-left: 20px;
+}  
