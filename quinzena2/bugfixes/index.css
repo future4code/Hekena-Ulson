@@ -1,0 +1,174 @@
+/** 
+  *
+  *  ESTILOS GERAIS 
+  *
+  **/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Roboto;   
+}
+
+h2 {
+    background-color: #fe7e02;
+    padding: 10px 5px 10px 5px;
+    color: white;
+    text-align: center;
+}
+
+input {
+    height: 20px;
+    width: 500px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: black, 3px;
+}
+
+button:active {
+    color: white;
+}
+
+button:hover{
+    filter: brightness(80%);
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+div>p:first-child {
+    display: inline;
+}
+
+div img {
+    background: none;
+}
+
+.botao-amarelo {
+    background-color: #ffaf43;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    display: block;
+    margin: 0 auto;
+}
+
+.botao-amarelo:hover {
+    background-color: #c44f00;
+}
+
+.txthome{
+    display: absolute;
+    padding-top: 80px;
+}
+
+.container {
+    display: relative;
+    height: 500px;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+.icone {
+    height: 20px;
+    width: 20px;
+}
+
+.icone:hover{
+    filter: opacity(120%)
+}
+.icone:active{
+    filter: opacity(100%)
+
+}
+
+
+/** 
+  *
+  *  ESTILOS HOME 
+  *
+  **/
+
+#container-de-descricao {
+    background-color: #2274a5;
+    color: white;
+    display: relative;
+}
+
+#container-de-descricao>ol {
+    padding: 15px 0px;
+}
+
+li{
+    display: list-item;
+    list-style-position: inside;
+}
+
+#container-para-comprar {
+    background-color: #e7eb90;
+}
+
+#container-para-comprar>p {
+    color: #c44f00;
+    padding: 100px 0;
+    font-size: 60px;
+}
+
+
+/**
+  *
+  *  ESTILOS COMPRAR 
+  *
+  **/
+
+div:nth-child(2),
+div:last-child {
+    text-align: center;
+}
+
+table {
+    width: 60%;
+    margin: 0 auto;
+}
+
+tr{
+    text-align: center;
+}
+
+td button {
+    background-color: #fadf63;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+}
+
+.container-do-search {
+    margin-top: 20px;
+    height: 100px;
+}
+
+
+#back-button {
+    background-color: white;
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    color: black;
+}
+
+#back-button:hover {
+    background-color: #635a3d
+}
+
