@@ -1,0 +1,38 @@
+body {
+    background-image: url("img/bgindex1.png");
+    background-size: cover;
+    background-position: top;  
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+h2{
+    display: flex;
+    text-align:center;
+    color:#21254e;
+    margin-left:30%;
+    font-family: Staatliches, sans-serif;
+    font-style: none;
+    font-size: 600px;
+    margin-top: -40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.textoentrada{
+    display: flex;
+    justify-content: right;
+    color: white;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 70px;
+    align-items: center;
+    justify-content: left;
+    text-align: right;
+    margin-left: 70px;
+}

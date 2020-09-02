@@ -1,0 +1,88 @@
+body {
+    background-image: url("img/ImagemSobre.jpg");
+    background-size: cover;
+    background-position: top;  
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    padding-bottom: 40px;
+} 
+h1{
+    display:block;
+    padding-top: 180px;
+    margin-left: 450px;
+    font-family: "Staatliches";
+    color: white;
+    font-size: 60px;
+    
+}
+h3{
+    display:inline;
+    font-family: "Staatliches";
+    color: white;
+    font-size: 30px;
+    padding-left: 145px;
+}
+
+
+h2{
+    display:block;
+    font-family: "Staatliches";
+    color: white;
+    font-size: 30px;
+    padding-left:145px;
+}
+
+h5{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 22px;
+}
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 18px;
+    text-align:justify, center;
+    margin-left: 400px;
+    
+}
+
+.textointro{
+    display: inline;
+}
+.item1{
+    display: inline;
+    width: 30vw;
+}
+
+ 
+
+ul{
+    display: inline;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
+table{
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+td{
+    padding: 15px;
+}
+
+.ling{
+    padding-left: 140px;
+}
+
