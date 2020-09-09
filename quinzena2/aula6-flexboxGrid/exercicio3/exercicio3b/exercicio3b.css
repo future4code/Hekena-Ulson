@@ -6,9 +6,13 @@ body {
     font-size: 10px;
     color: white;
 }
-
+#main-container{
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 20% 20% 20% 20%; 
+}
 .green-background {
     background-color: green;
+    grid-area: 1 / 4 ;
 }
 
 .yellow-background {
