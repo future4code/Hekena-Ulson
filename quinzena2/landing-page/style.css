@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 400vh;
+    background-color: #dbdbdb;
+}
+header{
+    background-color: white;
+    display: flex;
+    height: 10vh;
+    padding: 20px;
+    justify-content: flex-end;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    padding: 20px;
+    list-style: none;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    padding-top: 100px;
+}
+
+input{
+    display: flex;
+    width: 420px;
+    border-radius: 1px;
+    border-color: black;
+    justify-content: center;
+    
+}
+
+.entrada{
+    background-color:#dbdbdb;
+    display: flex;
+    height: 340px;
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    width: 8vw;
+    height: 3vh;
+    border-radius: 1px;
+    border-color: black;
+}
+
+button:active{
+    background-color: #88af3c;
+}
+
+#lupa{
+    height: 20px;
+    width: 20px;
+}
+
+.formbuscar{
+    display: flex;
+    width: 45vw;
+    height: 6vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#comidapronta{
+    width: 50%;
+}
+
+#mercado{
+    margin-top: 5vh;
+    width: 40%;
+}
+.nossatecnologia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:  #88af3c;
+    width: 99vw;
+    height: 100vh;
+}
+
+.boxservicos{
+    background-color:#dbdbdb;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    padding-bottom: 20vh;
+
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    width: 35vw;
+    background-color:#c1c1c1;
+}
+
+.box1:hover{
+    background-color: white;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    width: 35vw;
+    background-color:#c1c1c1;
+}
+.box2:hover{
+    background-color: white;
+}
+.txtecnologia{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    justify-content: center;
+
+}
+
+.mobile{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    justify-content: center;
+
+}
+
+#tecnologia{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+
+#tecnologia2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: black;
+}
+
+.app{
+    width: 20vw;
+    height: 5vh;
+    align-self: center;
+    margin-top: 5vh;
+    font-size: 1em;
+}
+
+#seta{
+    width: 5vh;
+    align-self: flex-end;
+    margin-right: 7.5vw;
+    margin-top: 1vh;
+}
+
+.osentregadores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: none;
+    width: 99vw;
+    height: 100vh;
+    padding-top: 20vh;
+}
+
+.trabalheconosco{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-around;
+    height: 70vh;
+    width: 40vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+
+}
+
+.apreciacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60vh;
+    width: 40vw;
+}
+
+#tconosco{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: black;
+    text-align: left;
+}
+
+#beneficios {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    text-align: left;
+}
+#txtexplic{
+    text-align: justify;
+}
+#entrega{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+#sejaumentregador{
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    width: 15vw;
+    height: 4vh;
+    border-radius: 1px;
+    border-color: black;
+    margin-top: 10vh;
+}
+
+#setaentregador{
+    width: 2vh;
+    align-self: flex-end;
+    margin-right: 11vw;
+    margin-top: 1vh;
+}
+ 
+#sejaumentregador:active {
+    background-color: #88af3c;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    display: flex;
+    height: 30vh;
+    width: 99vw;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color:  #3d3d29;
+}
+
+.infosfinais{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20vw;
+    height: 20vh;
+}
+
+.midias{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#midia{
+    width: 4vw;
+}
+
