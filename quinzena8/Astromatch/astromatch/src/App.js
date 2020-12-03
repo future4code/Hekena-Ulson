@@ -11,47 +11,60 @@ import {baseURL} from './Requests'
 
 
 function App() {
-  const [currentScreen, setCurrentScreen] = useState(true);
-  const [allProfiles, setAllProfiles] = useState([]);
-
+  const [allProfiles, setAllProfiles] = useState({});
+  const [currentScreen, setCurrentScreen] = useState(true); 
+  const [loaded, setLoaded] = useState(false); 
   
-  useEffect(() => {
-    getProfiles()
-  }, []);
+ useEffect(() => {
+    getProfiles();
+  }, []); 
   
   
+  // pega o perfil - está pegando, segundo o console log
   const getProfiles = () => {
-    axios.get("https://us-central1-missao-newton.cloudfunctions.net/astroMatch/helena/person").then((response) => {
+    setLoaded(false)
+    axios.get(`${baseURL}person`).then((response) => {
+      console.log(response)
       setAllProfiles(response.data.profile);
-      console.log(allProfiles)
     }).catch((error) => {
       console.log(error)
     })
   };
 
-  
+  // escolhe um perfil - mandado como props pro MatchScreen
   const chooseProfile = (boolean) => {
     const body = {
       id: allProfiles.id,
       choice: boolean
     }
     axios.post(`${baseURL}choose-person`, body)
-    .then((response) => {
+    .then(() => {
         getProfiles();
     }).catch((error) => {
       console.log(error)
     })
   }  
-
+ 
+  // tentando uma renderização condicional aqui nessa birosk - deu certo caraio
   const goToMatchList = () => {
     setCurrentScreen(!currentScreen)
+  } 
+
+  const renderScreen = () => {   
+    if (allProfiles !== null && currentScreen === true) {
+      return <MatchScreen getProfiles={allProfiles} chooseProfile={chooseProfile} />       
+    } else if (allProfiles !== null && currentScreen === false) {
+      return <MatchList/>
+    } else {
+      return <p>Loading</p>
+    }
   }
 
   return (
     <MainContainer>
       <MatchContainer>
-        <Header currentScreen={currentScreen} renderScreen={goToMatchList}/>
-          {currentScreen ? <MatchScreen  getProfiles={allProfiles} chooseProfile={chooseProfile}/> : <MatchList/>}    
+        <Header currentScreen={currentScreen} renderScreen={goToMatchList} />
+         {renderScreen()}
       </MatchContainer>
     </MainContainer>
   );

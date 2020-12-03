@@ -47,3 +47,15 @@ export const MatchContainer = styled.div`
   border-radius: 47px;
 
 `
+
+export const PhotoCard = styled.img`
+  display: flex;
+  width: 200px;
+  height: 200px;
+`
+
+export const MatchCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-align: center;
+`

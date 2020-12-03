@@ -16,7 +16,7 @@ export const MatchList = (props) => {
     axios.get(`${baseURL}matches`).then((response)=> {
       setMatches(response.data.response.matches) 
     }).catch(error => {
-      return (<alert/>)
+      console.log(error)
     })
   }
   
