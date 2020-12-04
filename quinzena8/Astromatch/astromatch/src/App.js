@@ -6,7 +6,7 @@ import { MainContainer, MatchContainer} from './Styles';
 import Header from './Components/Header/Header';
 import {MatchList} from './Components/MatchList/MatchList';
 import {MatchScreen} from './Components/MatchScreen/MatchScreen'; 
-import {baseURL} from './Requests' 
+import {baseURL, config} from './Requests' 
 
 
 
@@ -32,10 +32,10 @@ function App() {
   };
 
   // escolhe um perfil - mandado como props pro MatchScreen
-  const chooseProfile = (boolean) => {
+  const chooseProfile = (yesorno) => {
     const body = {
       id: allProfiles.id,
-      choice: boolean
+      choice: yesorno
     }
     axios.post(`${baseURL}choose-person`, body)
     .then(() => {
@@ -50,11 +50,21 @@ function App() {
     setCurrentScreen(!currentScreen)
   } 
 
+  // limpa os matches e é passada como props pro botão da MatchList
+  const clearProfiles = () => {
+    axios.put(`${baseURL}clear`).then((response) => {
+      console.log("sucesso caraio")
+    }).catch((error) => {
+      console.log(error)
+    })
+  }; 
+
+
   const renderScreen = () => {   
     if (allProfiles !== null && currentScreen === true) {
       return <MatchScreen getProfiles={allProfiles} chooseProfile={chooseProfile} />       
     } else if (allProfiles !== null && currentScreen === false) {
-      return <MatchList/>
+      return <MatchList clearProfiles={clearProfiles} />
     } else {
       return <p>Loading</p>
     }

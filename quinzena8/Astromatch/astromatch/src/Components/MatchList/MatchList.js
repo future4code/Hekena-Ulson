@@ -2,35 +2,44 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 import {baseURL} from '../../Requests'
+import {ClearButton, Paragraph, MainContainer, MatchListContainer, WeirdImage} from './Styled'
+
 
 
 
 export const MatchList = (props) => {
-  const [matches, setMatches] = useState([]);
+  const [matchProfile, setMatchProfile] = useState([]);
 
   useEffect(()=> {
-    getMatches()
-  })
+    getMatches();
+  }, []);
 
   const getMatches = () => {
     axios.get(`${baseURL}matches`).then((response)=> {
-      setMatches(response.data.response.matches) 
+      setMatchProfile(response.data.matches)
     }).catch(error => {
       console.log(error)
     })
-  }
-  
-  const renderMatches = matches.map((person)=>{
-    return <div key={person.id}>
-              <img src={person.photo}/>
-              <p>{person.name}</p>
-          </div>
+  };
+
+  console.log(matchProfile)
+  const renderMatches = matchProfile.map((profile)=>{
+    if (matchProfile === undefined) {
+      return <p>Eita! Você ainda não tem matches</p>
+    } else {
+      return <MatchListContainer key={profile.id}>
+                  <WeirdImage src={profile.photo}/>
+                  <Paragraph>{profile.name}</Paragraph>
+          </MatchListContainer>
+    }
+    
   })
   
   return (
-    <div>
+    <MainContainer>
         {renderMatches}
-    </div>
+        <ClearButton onClick = {props.clearProfiles}>Cansei dessa galera</ClearButton> 
+    </MainContainer>
 );
 }
 

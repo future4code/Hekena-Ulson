@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import {GoBackButton, DmButton, MainHeader} from './Styled'
+import {StyledLogo, GoBackButton, DmButton, MainHeader} from './Styled'
+import Logo from '../../imgs/Logo.png'
 
 
 
@@ -15,7 +16,7 @@ const Header = (props) => {
 
   return (
    <MainHeader>
-     <img></img>
+     <StyledLogo src={Logo}></StyledLogo>
      {!props.currentScreen ?  goBackButton : dmButton}
     
    </MainHeader>

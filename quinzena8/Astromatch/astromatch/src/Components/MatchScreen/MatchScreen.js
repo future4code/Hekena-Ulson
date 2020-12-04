@@ -1,23 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
-import {PhotoCard, MainContainer, DislikeButton, LikeButton} from './Styled'
+import { StyledParagraph, Typography, MatchButtons, PhotoCard, MainContainer, DislikeButton, LikeButton, MatchCard} from './Styled'
 
 
 
 export const MatchScreen = (props) => {
   return (
     <MainContainer>
-                <div>
-                  <PhotoCard src={props.getProfiles.photo}/> 
-                  <div>
-                    {props.getProfiles.name} - {props.getProfiles.age}
-                    <p>{props.getProfiles.bio}</p>
-                  </div>
-                </div>
+                <MatchCard>
+                    <PhotoCard src={props.getProfiles.photo}/> 
+                    <Typography>
+                      {props.getProfiles.name} - {props.getProfiles.age}
+                    </Typography>  
+                      <StyledParagraph>{props.getProfiles.bio}</StyledParagraph>
                     
-                {/* <DislikeButton onClick = {props.chooseProfile(false)}>X</DislikeButton>
-                <LikeButton onClick = {props.chooseProfile(true)}>♡</LikeButton>  */}
+                </MatchCard>
+                <MatchButtons> 
+                  <DislikeButton onClick = { () => props.chooseProfile(false)}>X</DislikeButton>
+                  <LikeButton onClick = { () => props.chooseProfile(true)}>♡</LikeButton>
+                </MatchButtons>
+                  
     </MainContainer>
 );
 } 
