@@ -9,7 +9,7 @@ const loginUrl = "https://us-central1-labenu-apis.cloudfunctions.net/labeX/helen
 const AdminLogin = () => {
   const history = useHistory();
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("")
+  const [password, setPassword] = useState("");
   
   const onChangeEmail = (event) => {
     setEmail(event.target.value);
