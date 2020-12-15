@@ -4,7 +4,6 @@ import styled from 'styled-components';
 export const MainDiv = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 360px;
     height: 640px;
     background-image: url(${background});  
@@ -12,11 +11,14 @@ export const MainDiv = styled.div`
 
 export const MainContainer = styled.div`
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     background: rgba(255, 255, 255, 0.7);
     padding-top: 4%;
     flex-direction: column;
     align-self: center;
-    margin-top: 35%;
+    margin-top: 25%;
     opacity: 90%; 
     border-radius: 24px;
     height: 369px;
@@ -26,21 +28,7 @@ export const MainContainer = styled.div`
 export const PresentationWhite = styled.h2`
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    color: #FFFFFF;
-    opacity: 100%;
-    margin-left: 30px;
-    margin-bottom: -4%;
-    font-weight: 500;
-
-`
-
-export const PresentationBlue = styled.h2`
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
     color: #361F93;
-    font-weight: 500;
-    margin-bottom: -4%;
-    margin-left: 30px;
 `
 
 export const ButtonStyled = styled.button`
@@ -53,7 +41,18 @@ export const ButtonStyled = styled.button`
     height: 41px;
     border-style: none;
     opacity: 100;
-    margin-top: 20%;
-    align-self: center;
+    margin-top: 60%;
+    margin-bottom: 4%;
     outline:none;
+    align-self: center;
+`
+
+export const StyledInput = styled.input`
+    border-radius: 45px;
+    border-style: none;
+    outline:none;
+    width: 80%;
+    padding: 2%;
+    padding-left: 6%;
+
 `

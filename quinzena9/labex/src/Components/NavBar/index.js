@@ -1,16 +1,22 @@
 import React from 'react';
-import {useHistory} from 'react-router-dom';
+import styled from 'styled-components';
+import { useHistory } from "react-router-dom";
+import {MainNavBar, Login, Logo, LogoX} from './styled'
 
 const NavBar = () => {
   const history = useHistory();
 
-  const goToHomePage = () => {
-    history.push("/")
-  }
+  
+  const goToAdminLogin = () => {
+    history.push("/login");
+  };
 
   return (
-    <div>
-    </div>
+    <MainNavBar>
+        <Logo>Labe</Logo>
+        <LogoX>X</LogoX>
+      <Login onClick={goToAdminLogin}>Login</Login>
+    </MainNavBar>
   );
 }
 
