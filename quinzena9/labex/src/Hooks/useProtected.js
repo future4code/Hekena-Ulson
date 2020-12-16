@@ -8,8 +8,6 @@ const useProtected = () => {
     const token = localStorage.getItem("token");
     if (!token) {
       history.push("/login");
-      setEmail("");
-      setPassword("")
     }
   }, [history]);
 };
