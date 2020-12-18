@@ -9,13 +9,9 @@ const HomePage = () => {
   const history = useHistory();
   
 
-  const goToAdminLogin = () => {
-    history.push("/login");
-  };
-
-  const goToApplicationForm = () => {
-    history.push("/application-form"); 
-  };
+  const goToTripList = () => {
+    history.push("/trips")
+  } 
 
   return (
     <MainDiv>
@@ -24,7 +20,7 @@ const HomePage = () => {
         <PresentationWhite>Encontre as melhores</PresentationWhite>
         <PresentationBlue>viagens espaciais</PresentationBlue> 
         <PresentationWhite>e boa viagem!</PresentationWhite>
-        <ButtonStyled onClick={goToApplicationForm}>QUERO VIAJAR!</ButtonStyled>
+        <ButtonStyled onClick={goToTripList}>QUERO VIAJAR!</ButtonStyled>
       </MainContainer>
     </MainDiv>
   );

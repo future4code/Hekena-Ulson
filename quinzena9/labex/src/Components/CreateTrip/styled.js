@@ -1,7 +1,7 @@
 import background from '../../img/Background.png';
 import styled from 'styled-components';
 
-export const MainDiv2 = styled.div`
+export const MainDiv5 = styled.div`
     display: flex;
     flex-direction: column;
     width: 360px;
@@ -9,7 +9,7 @@ export const MainDiv2 = styled.div`
     background-image: url(${background});  
 `
 
-export const MainContainer2 = styled.div`
+export const MainContainer5 = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -29,14 +29,14 @@ export const MainContainer2 = styled.div`
     width: 70%;
 `
 
-export const Presentation2 = styled.h2`
+export const Presentation5 = styled.h2`
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: #361F93;
     margin-top: 4%;
 `
 
-export const ButtonStyled2 = styled.button`
+export const ButtonStyled5 = styled.button`
     font-family: 'Poppind', sans-serif;
     font-size: 14px;
     color: white;

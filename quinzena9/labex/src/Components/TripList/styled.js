@@ -1,49 +1,46 @@
 import background from '../../img/Background.png';
 import styled from 'styled-components';
 
-export const MainDiv2 = styled.div`
+export const MainDiv3 = styled.div`
     display: flex;
     flex-direction: column;
     width: 360px;
-    height: 640px;
+    height: 1280px;
     background-image: url(${background});  
 `
 
-export const MainContainer2 = styled.div`
+export const MainContainer3 = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     padding-top: 4%;
-    flex-direction: column;
-    align-self: center
-    display: flex;
-    background: rgba(255, 255, 255, 0.7);
-    flex-direction: column;
     align-self: center;
+    background: rgba(255, 255, 255, 0.7);
     margin-top: 20%;
     padding-top: 8%;
     opacity: 90%; 
     border-radius: 24px;
-    height: 80%;
+    height: 120%;
     width: 70%;
 `
 
-export const Presentation2 = styled.h2`
+export const Presentation3 = styled.h2`
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    color: #361F93;
-    margin-top: 4%;
+    color: #FFFFFF;
+    margin-bottom: -10%;
+    margin-top: -4%;
 `
 
 export const ButtonStyled2 = styled.button`
-    font-family: 'Poppind', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     color: white;
     background-color: #361F93;
     border-radius: 22px;
-    width: 192px;
-    height: 41px;
+    width: 100px;
+    height: 30px;
     border-style: none;
     opacity: 100;
     margin-top: 10%;
@@ -62,28 +59,27 @@ export const StyledInput2 = styled.input`
 
 `
 
-export const StyledInputText = styled.input`
-    border-radius: 10px;
-    border-style: none;
-    outline:none;
-    width: 80%;
-    height: 20%;
-    padding: 2%;
-    padding-left: 6%;
+export const TripCard = styled.div`
     display: flex;
-
+    flex-direction: column;
+    background: #FFFFFF;
+    margin-top: 20%;
+    border-radius: 24px;
+    height: 30%;
+    width: 86%;
+    padding: 3%;
 `
 
-export const MainForm = styled.form`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 4%;
-    flex-direction: column;
-    align-self: center
-    border: 2px solid black;
-    width: 100%;
-    height: 100%;
-   
+export const CardTitle = styled.h6`
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #361F93;
+    margin-top: 3%;
+    margin-bottom: -2%;
+`
+export const CardDetail = styled.p`
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    margin-bottom: -2%;
+    
 `

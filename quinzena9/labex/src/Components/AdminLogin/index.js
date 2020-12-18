@@ -36,12 +36,9 @@ const AdminLogin = () => {
         history.push("/login/management");
       })
       .catch((error) => {
-          setEmail("");
-          setPassword("");
-        
         console.log(error);
       });
-  };
+    };
 
   return (
     <MainDiv>

@@ -17,11 +17,11 @@ const Router = () => {
               <HomePage />
             </Route>
     
-            <Route exact path="/trips/list">
+            <Route exact path="/trips">
               <TripList/>
             </Route>
     
-            <Route exact path="/application-form">
+            <Route exact path="/application-form/:id">
               <ApplicationForm/>
             </Route>
 
