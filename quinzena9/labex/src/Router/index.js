@@ -7,14 +7,16 @@ import HomePage from '../Components/HomePage';
 import TripDetail from '../Components/TripDetail';
 import TripList from '../Components/TripList';
 import ErrorPage from '../Components/ErrorPage/ErrorPage'
+import TripInfo from '../Components/TripDetail/TripInfo'
 import React from 'react';
+
 
 const Router = () => {
     return (
         <BrowserRouter>
           <Switch>
             <Route exact path="/">
-              <HomePage />
+              <HomePage/>
             </Route>
     
             <Route exact path="/trips">
@@ -33,16 +35,20 @@ const Router = () => {
               <CreateTrip/>
             </Route>
 
+            <Route exact path="/tripInfo/:id">
+              <TripInfo/>
+            </Route>
+
             <Route exact path="/trips/detail">
               <TripDetail/>
             </Route>
 
             <Route exact path="/login/management">
-                <AdmMngmPage/>
+              <AdmMngmPage/>
             </Route>
 
             <Route>
-              <ErrorPage />
+              <ErrorPage/>
             </Route>
           </Switch>
         </BrowserRouter>

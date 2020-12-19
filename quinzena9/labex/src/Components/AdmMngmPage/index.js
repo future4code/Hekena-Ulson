@@ -15,7 +15,7 @@ const AdmMngmPage = () => {
   }
 
   const goToTripDetail = () => {
-    history.push("/trips/detail")
+    history.push("/trips/detail/:id")
   }
 
   const goBack = () => {

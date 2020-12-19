@@ -34,5 +34,6 @@ export const Login = styled.button`
     background-color: white;
     border-style: none;
     margin-left: 200px;
+    outline: none;
 
 `

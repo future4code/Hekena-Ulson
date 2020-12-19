@@ -5,7 +5,7 @@ export const MainDiv3 = styled.div`
     display: flex;
     flex-direction: column;
     width: 360px;
-    height: 1280px;
+    height: 100%;
     background-image: url(${background});  
 `
 
@@ -19,6 +19,7 @@ export const MainContainer3 = styled.div`
     background: rgba(255, 255, 255, 0.7);
     margin-top: 20%;
     padding-top: 8%;
+    padding-bottom: 8%;
     opacity: 90%; 
     border-radius: 24px;
     height: 120%;
